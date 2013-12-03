@@ -1,0 +1,21 @@
+
+CPPFLAGS=-g -I./libet -I./include
+
+LDFLAGS=-L./lib -lgtest_main -lpthread -llog4cplus -ltinyxml -let -ldl -Wl,-rpath ./lib
+
+
+all:$(TARGETS) $(MODULES)
+
+$(OBJECTS):%.o:%.cpp %.h
+	$(CC) -c $(CPPFLAGS) $< -o $@ 
+
+test:test.cc $(OBJECTS)
+	$(CC) $(CPPFLAGS) $^ -o $@ $(LDFLAGS)
+
+$(MODULES):%.so:%.cpp $(OBJECTS)
+	$(CC) $(CPPFLAGS) -shared -fPIC -o $@ $^ $(LDFLAGS)
+
+modules:$(MODULES)
+
+clean:
+	rm -rf $(OBJECTS) core $(TARGETS) $(MODULES)

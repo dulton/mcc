@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Module>
+	<Infomation>
+		<Type>Matrix</Type>
+		<Name>matrixhoneywell</Name>
+		<Version>1.0.0</Version>
+		<Author>author@163.com</Author>
+		<Date>20131111</Date>
+	</Infomation>
+	<Configuration>
+		<Item type="Integer" name="Baudrate">9600</Item>
+		<Item type="Integer" name="Stopbits">1</Item>
+		<Item type="Integer" name="Databits">8</Item>
+		<Item type="String" name="Parity">N</Item>
+		<Item type="Integer" name="KeyboardId">10</Item>
+		<Item type="Float" name="Scaler">1.5</Item>
+	</Configuration>
+</Module>

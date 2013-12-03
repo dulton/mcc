@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Module>
+	<Infomation>
+		<Type>Keyboard</Type>
+		<Name>testkeyboard</Name>
+		<Version>1.0.0</Version>
+		<Author>author@163.com</Author>
+		<Date>20131106</Date>
+	</Infomation>
+	<Configuration>
+		<Item type="Integer" name="Baudrate">9600</Item>
+		<Item type="Integer" name="Stopbits">1</Item>
+		<Item type="Integer" name="Databits">8</Item>
+		<Item type="String" name="Parity">N</Item>
+	</Configuration>
+</Module>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Module>
+	<Infomation>
+		<Type>Matrix</Type>
+		<Name>JXJ1000</Name>
+		<Version>1.0.0</Version>
+		<Author>author@163.com</Author>
+		<Date>20131106</Date>
+	</Infomation>
+	<Configuration>
+		<Item type="Integer" name="baudrate">9600</Item>
+		<Item type="Integer" name="stopbits">1</Item>
+		<Item type="Integer" name="databits">8</Item>
+		<Item type="String" name="parity">N</Item>
+		<Item type="Boolean" name="useThread">yes</Item>
+	</Configuration>
+</Module>
