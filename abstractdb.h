@@ -21,9 +21,12 @@ class MonitorInfo {
 	protected:
 		int mPort;
 };
-class AbstractDB {
+
+class AbstractDb {
 	public:
 		virtual std::vector<TrunkInfo>& getTrunks() = 0;
 		virtual std::vector<CameraInfo>& getCameras() = 0;
 		virtual std::vector<MonitorInfo>& getMonitors() = 0;
+		virtual int getUserInfo(const char *username, User& user) const = 0;
+		virtual int getCameraInfo(int camera_id, Camera& cam) const = 0;
 };

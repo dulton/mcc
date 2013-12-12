@@ -1,0 +1,8 @@
+*.o
+*.so
+*.a
+*.log
+
+include/
+lib/
+libet/

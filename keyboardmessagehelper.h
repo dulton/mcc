@@ -10,9 +10,9 @@ class KeyboardMessageHelper {
 			msg->mHandle = keyboard_handle;
 			msg->mMatrix = matrix;
 			msg->mCamera = camera;
-			msg->mInPort= camera;
+			msg->mPortIn = camera;
 			msg->mMonitor = monitor;
-			msg->mOutPort= monitor;
+			msg->mPortOut= monitor;
 			return msg;
 		}
 		static Message *buildPtzMessage(int keyboard_handle, int matrix, int camera, int zi_speed, int zo_speed, int vspeed, int hspeed)
